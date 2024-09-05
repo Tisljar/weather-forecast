@@ -15,3 +15,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.scroll-bar {
+  scrollbar-width: thin;
+  scrollbar-color: #6969dd #e0e0e0;
+  scrollbar-width: thin;
+}
+
+.sky-bg{
+  background: linear-gradient(115deg, #3c8ce7, #00eaff);
+
+}
+
+

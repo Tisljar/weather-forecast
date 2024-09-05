@@ -3,7 +3,6 @@ import { forecastType, optionType } from '../types';
 import { initialForecastState } from '../helpers/initialForecastState';
 
 const useForecast = () => {
-  const [isOptionSelected, setIsOptionSelected] = useState<boolean>(false);
   const [weatherData, setWeatherData] = useState<forecastType | null>(null);
   const [city, setCity] = useState<string>('');
   const getWeatherForecast = async (option: optionType) => {
@@ -21,7 +20,6 @@ const useForecast = () => {
         ...data.city,
         list: data.list.slice(0, 16),
       }
-      setIsOptionSelected(true);
       console.log(forecastData);
       setWeatherData(forecastData);
     } catch (err) {
@@ -34,7 +32,6 @@ const useForecast = () => {
   };
 
   return {
-    isOptionSelected,
     weatherData,
     city,
     onOptionSelect,

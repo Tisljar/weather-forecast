@@ -28,7 +28,7 @@ const LocationSearch = ({
                 onClick={() => optionClick(option)}
                 className='text-left text-sm- w-full hover:bg-gray-700 hover:text-white px-4 py-1 cursor-pointer'
               >
-                {option.name}
+                {option.name}, {option.country}
               </button>
             </li>
           ))}
