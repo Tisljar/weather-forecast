@@ -14,10 +14,11 @@ const WeatherForecast = ({
   weatherData,
   city,
 }: WeatherForecastProps): JSX.Element => {
+    console.log(weatherData);
   const today = weatherData.list[0];
   return (
     <>
-      <div className='mx-auto w-[300px] mt-4 mb-8'>
+      <div className='mx-auto py-8 w-[90%] sm:max-w-[62lvw] lg:max-w-[550px]'>
         <div className='text-center'>
           {/* <h2 className='font-medium text-4xl text-gray-900'>{city}</h2> */}
           <h2 className='font-bold text-4xl text-gray-900 mt-4'>
@@ -54,17 +55,19 @@ const WeatherForecast = ({
             </div>
           ))}
         </div>
-        <div className='flex flex-wrap justify-between text-gray-900'>
+            <div className='w-full flex text-gray-900 gap-0 justify-center md:gap-8 md:justify-center'>
           <div className='w-[140px] text-xs font-bold flex flex-col items-center 
-        bg-white/15 backdrop-blur-lg rounded drop-shadow-lg py-4 mb-5'>
+        bg-white/15 backdrop-blur-lg rounded drop-shadow-lg py-4 mx-1 mb-5'>
             <WiSunrise size={32}/>
             <span className="mt-2">{getSunTime(weatherData.sunrise)}</span>
           </div>
           <div className='w-[140px] text-xs font-bold flex flex-col items-center 
-        bg-white/15 backdrop-blur-lg rounded drop-shadow-lg py-4 mb-5'>
+        bg-white/15 backdrop-blur-lg rounded drop-shadow-lg py-4 mx-1 mb-5'>
             <WiSunset size={32} />
             <span className="mt-2">{getSunTime(weatherData.sunset)}</span>
           </div>
+          </div>
+          <div className='flex flex-wrap justify-center md:justify-center text-gray-900'>
           <Tile
             icon={<WiStrongWind size={32}/>}
             title="Wind"
