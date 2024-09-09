@@ -1,4 +1,3 @@
-import { ChangeEvent, useState } from 'react';
 import { LocationSearchProps, optionType } from '../../types';
 import useCitySearch from '../../hooks/useCitySearch';
 

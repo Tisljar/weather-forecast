@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { forecastType, optionType } from '../types';
-import { initialForecastState } from '../helpers/initialForecastState';
 
 const useForecast = () => {
   const [weatherData, setWeatherData] = useState<forecastType | null>(null);
