@@ -21,11 +21,11 @@ const WeatherForecast = ({
       <div className='mx-auto py-8 w-[90%] sm:max-w-[62lvw] lg:max-w-[550px]'>
         <div className='text-center'>
           {/* <h2 className='font-medium text-4xl text-gray-900'>{city}</h2> */}
-          <h2 className='font-bold text-4xl text-gray-900 mt-4'>
+          <h2 className='font-medium text-4xl text-gray-900 mt-4'>
             {weatherData.name}
-            <span className='font-thin'>, {weatherData.country}</span>
+            <span className='font-light'>, {weatherData.country}</span>
           </h2>
-          <h2 className='text-4xl font-bold'>
+          <h2 className='text-4xl font-medium'>
             <Degree temp={Math.round(today.main.temp)} />
           </h2>
           <p className='text-md'>
@@ -57,12 +57,12 @@ const WeatherForecast = ({
         </div>
             <div className='w-full flex text-gray-900 gap-0 justify-center md:gap-8 md:justify-center'>
           <div className='w-[140px] text-xs font-bold flex flex-col items-center 
-        bg-white/15 backdrop-blur-lg rounded drop-shadow-lg py-4 mx-1 mb-5'>
+        bg-white bg-opacity-75 backdrop-blur-lg drop-shadow-lg py-4 mx-1 mb-5'>
             <WiSunrise size={32}/>
             <span className="mt-2">{getSunTime(weatherData.sunrise)}</span>
           </div>
           <div className='w-[140px] text-xs font-bold flex flex-col items-center 
-        bg-white/15 backdrop-blur-lg rounded drop-shadow-lg py-4 mx-1 mb-5'>
+        bg-white bg-opacity-75 backdrop-blur-lg drop-shadow-lg py-4 mx-1 mb-5'>
             <WiSunset size={32} />
             <span className="mt-2">{getSunTime(weatherData.sunset)}</span>
           </div>

@@ -10,7 +10,7 @@ function App() {
     >
       {!weatherData ? (
         <section
-          className='w-full md:max-w-[500px] p-4 flex flex-col 
+          className='w-full min-h-[100vh] p-4 flex flex-col 
       text-center items-center justify-center md:px-10 lg:px-24 h-full lg:h-[500px]
       text-gray-950 bg-white bg-opacity-50 backdrop-blur-lg drop-shadow-lg rounded'
         >
@@ -18,7 +18,7 @@ function App() {
         </section>
       ) : (
         <section
-          className='w-full md:max-w-[600px] lg:max-w-[1000px] py-4 md:py-4 flex flex-col 
+          className='w-full min-h-[100vh] py-4 md:py-4 flex flex-col 
                     md:px-10 lg:px-24 h-full lg:h-auto
                     text-gray-950 bg-white bg-opacity-50 backdrop-blur-lg drop-shadow-lg rounded'
         >
