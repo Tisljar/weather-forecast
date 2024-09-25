@@ -13,12 +13,12 @@ const LocationSearch = ({
       <p className='text-lg mt-2 text-gray-900'>
         Choose the location to get a forecast!
       </p>
-      <div className='flex mt-10 md:mt-4 relative'>
+      <div className='flex mt-10 md:mt-4 relative max-w-[80lvw]'>
         <input
           type='text'
           value={location}
           onChange={onInputChange}
-          className='pl-2 pr-6 py-1 rounded-l-md border-2 border-white'
+          className='pl-2 pr-6 py-1 rounded-l-md border-2 border-white flex-grow w-[150px] md:w-auto'
         />
         <ul className='absolute top-9 bg-white ml-1 rounded-b-md'>
           {options.map((option: optionType, index: number) => (
